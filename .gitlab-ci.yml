@@ -1,6 +1,11 @@
 image: java:8-jdk
-stages:build
-job_buikd:
+
+stages:
+  - build
+
+job_build:
   stage:build
-  script: ./build_all.sh
+  script: 
+    - ./build_all.sh
+
 
