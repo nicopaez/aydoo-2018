@@ -1,11 +1,8 @@
-image: java:8-jdk
-
-stages:
-  - build
-
-job_build:
-  stage:build
+--- 
+image: "java:8-jdk"
+job_build: 
   script: 
     - ./build_all.sh
-
-
+  stage: build
+stages: 
+  - build
